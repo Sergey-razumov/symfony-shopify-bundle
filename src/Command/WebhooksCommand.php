@@ -4,7 +4,7 @@ namespace CodeCloud\Bundle\ShopifyBundle\Command;
 
 use CodeCloud\Bundle\ShopifyBundle\Exception\StoreNotFoundException;
 use CodeCloud\Bundle\ShopifyBundle\Model\ShopifyStoreManagerInterface;
-use CodeCloud\Bundle\ShopifyBundle\Service\WebhookCreatorInterface;
+use CodeCloud\Bundle\ShopifyBundle\Service\WebhookCreator;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -14,7 +14,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 class WebhooksCommand extends Command
 {
     /**
-     * @var WebhookCreatorInterface
+     * @var WebhookCreator
      */
     private $webhookCreator;
 
@@ -33,7 +33,7 @@ class WebhooksCommand extends Command
      * @param ShopifyStoreManagerInterface $storeManager
      * @param array $topics
      */
-    public function __construct(WebhookCreatorInterface $webhookCreator, ShopifyStoreManagerInterface $storeManager, array $topics)
+    public function __construct(WebhookCreator $webhookCreator, ShopifyStoreManagerInterface $storeManager, array $topics)
     {
         $this->webhookCreator = $webhookCreator;
         $this->storeManager = $storeManager;

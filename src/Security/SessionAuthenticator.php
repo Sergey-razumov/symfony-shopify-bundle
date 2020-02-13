@@ -16,7 +16,7 @@ use Symfony\Component\Security\Core\User\UserProviderInterface;
 /**
  * Authenticates users via session parameter.
  */
-class SessionAuthenticator extends AbstractGuardAuthenticator
+abstract class SessionAuthenticator extends AbstractGuardAuthenticator
 {
     /**
      * @var UrlGeneratorInterface

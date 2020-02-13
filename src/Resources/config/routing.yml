@@ -1,14 +1,11 @@
 codecloud_shopify_auth:
     path: /shopify/auth
-    defaults:
-        _controller: codecloud_shopify.controller.oauth:auth
+    controller: CodeCloud\Bundle\ShopifyBundle\Controller\OAuthController::auth
 
 codecloud_shopify_verify:
     path: /shopify/verify
-    defaults:
-        _controller: codecloud_shopify.controller.oauth:verify
+    controller: CodeCloud\Bundle\ShopifyBundle\Controller\OAuthController::verify
 
 codecloud_shopify_webhooks:
     path: /shopify/webhooks
-    defaults:
-        _controller: codecloud_shopify.controller.webhooks:handleWebhook
+    controller: CodeCloud\Bundle\ShopifyBundle\Controller\WebhookController::handleWebhook
