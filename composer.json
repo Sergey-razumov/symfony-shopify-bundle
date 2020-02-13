@@ -4,6 +4,7 @@
   "description": "Makes Shopify app development a breeze",
   "keywords": ["shopify", "symfony"],
   "homepage": "https://github.com/richtermeister/symfony-shopify-bundle",
+  "minimum-stability": "stable",
   "license": "MIT",
   "authors": [
     {
