@@ -1,5 +1,5 @@
 {
-  "name": "purple/symfony-shopify-bundle",
+  "name": "purple-zotapay/symfony-shopify-bundle",
   "type": "library",
   "description": "Makes Shopify app development a breeze",
   "keywords": ["shopify", "symfony"],
