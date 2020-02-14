@@ -1,5 +1,5 @@
 {
-  "name": "codecloud/symfony-shopify-bundle",
+  "name": "purple/symfony-shopify-bundle",
   "type": "library",
   "description": "Makes Shopify app development a breeze",
   "keywords": ["shopify", "symfony"],
